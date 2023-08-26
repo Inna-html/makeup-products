@@ -1,0 +1,22 @@
+.headers {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:right;
+    flex-direction: row;
+    background: #a18585;
+    font-style: italic;
+    font-style: 32px;
+    color: #333;
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+}
+
+.headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
