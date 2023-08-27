@@ -1,15 +1,16 @@
 import { Link, Route, Routes } from 'react-router-dom';
 // import './App.css';
-import { Home, Blush, Bronzer, EyeBrows, EyeShadow, Eyeliner, Foundation, LipLiner, Mascara, NailPolish, Lipstick, BlushPowder, BlushCream } from './componenets';
+import { Home, Bronzer, EyeBrows, EyeShadow, Eyeliner, Foundation, LipLiner, Mascara, NailPolish, Lipstick, Blush } from './componenets';
 
 import css from './headers.module.css';
 
 
 
 
+
 function App() {
   return (
-    <div>
+    <div> hello wwwwwwwwwwww
       <div className={css.headers}>
         <div>
           <div><Link to={'/home'}>Home page</Link></div>
@@ -17,13 +18,7 @@ function App() {
 
         <div className={css.headerRight}>
           <div><Link to={'/bronzer'}>Bronzer </Link></div>
-
-
-          <div><Link to={'/blush'}>Blush</Link>
-              <li><Link to={':BlushPowder'}>Powder</Link></li>
-              <li><Link to={':BlushCream'}>Cream</Link></li>
-          </div>
-
+          <div><Link to={'/blush'}> Blush </Link></div>
           <div><Link to={'/eyebrows'}>Eyebrows</Link></div>
           <div><Link to={'/eyeShadow'}>Eye shadow </Link></div>
           <div><Link to={'/eyeliner'}>Eyeliner </Link></div>
@@ -37,11 +32,9 @@ function App() {
       
 
       <Routes>
-        <Route path={'home'} element={<Home />}/>
+        <Route path={'/'} element={<Home />}/>
 
         <Route path={'blush'} element={<Blush />}>
-          <Route path={'.'} element={<BlushPowder/>}/>
-          <Route path={'.'} element={<BlushCream/>}/>
         </Route>
 
 

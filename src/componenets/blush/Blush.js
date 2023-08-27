@@ -1,27 +1,23 @@
 import { useEffect, useState } from "react";
-import { blushCreamService, blushPowderService } from "../../services";
-import { BlushPowder } from "./BlushPowder";
-import { BlushCream } from "./BlushCream";
+
+import { BlushAdd } from "./BlashAdd";
+import { blushService } from "../../services";
+
 
 const Blush = () => {
 
-    const [powders, setPowder] = useState([]);
-    const [creams, setCream] = useState([]);
+    const [blushs, setBlushs] = useState([]);
 
     useEffect(() => {
-        blushPowderService.getAll().then(({data}) => setPowder(data))
-    }, [])
-
-    useEffect(() => {
-        blushCreamService.getAll().then(({data}) => setCream(data))
+        blushService.getAll().then(({data}) => setBlushs(data))
     }, [])
     
     return (
         <div>
-            <div>{powders.map(powders => <BlushPowder key={powders} powders={powders}/>)}</div>
-            <div>{creams.map(creams => <BlushCream key={creams} creams={creams} />)}</div>
+            <div>{blushs.map(blushs => <BlushAdd key={blushs} blushs={blushs}/>)}</div>
         </div>
     )
 };
 
 export { Blush };
+

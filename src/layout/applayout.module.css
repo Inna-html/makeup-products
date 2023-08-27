@@ -1,0 +1,21 @@
+.mainLayout {
+    width: 100%;
+    height: 100%;
+    background: #e4dcdc;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    width: 200px;
+    height: 100vh;
+    margin: 0 20px 0 0px;
+    background: #a185854e;
+}
+
+.outlet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+

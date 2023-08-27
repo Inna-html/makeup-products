@@ -1,13 +1,19 @@
-export * from './home';
-export * from './blush';
-export * from './bronzer';
-export * from './eyeBrows';
-export * from './eyeShadow';
-export * from './eyeliner';
-export * from './foundetion';
+export * from './home/Home';
+export * from './blush/';
+export * from './bronzer/Bronzer';
+export * from './eyeBrows/EyeBrows';
+export * from './eyeShadow/EyeShadow';
+export * from './eyeliner/Eyeliner';
+export * from './foundetion/Foundation';
+export * from './lipLiner/LipLiner';
+export * from './lipstick/Lipstick';
+export * from './mascara/Mascara';
+export * from './nailPolish/NailPolish'
 
-export * from './lipLiner';
-export * from './lipstick';
-export * from './mascara';
-export * from './nailPolish'
+export * from './header/Header';
+export * from './navbar/Navbar';
 
+
+// export * from '';
+// export * from '';
+// export * from '';
