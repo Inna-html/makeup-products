@@ -1,21 +1,24 @@
-import css from './blush.module.css';
+import { Link } from 'react-router-dom';
+
+import css from '../../layout/applayout.module.css';
+
 
 const BlushAdd = ({blushs}) => {
 
-    const {brand, name, price, price_sign, image_link, product_link, 
-            description, rating, category, product_type, tag_list, }  = blushs;
-            // product_colors, hex_value, colour_name}
+    const {brand, name, price, price_sign, api_featured_image, 
+            currency, category, product_type, }  = blushs;
 
     return (
-        <div className={css.mainBlush}>
+        <div className={css.main}>
+            <Link to={'/blush/'+blushs.id } state={{...blushs}}>
             <div className={css.block}>
-                <img src={image_link} alt={brand}/>
+                <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>
-                <div> {name} </div>
-                <div> {tag_list} </div>
-                <div> {price_sign} {price}  </div>
-                <div> {product_type} {category} </div>
+                <p>{name}</p>
+                <p>{price_sign} {price} {currency}</p>
+                <p>{product_type} {category}</p>
            </div>
+           </Link>
         </div>
     )
 }

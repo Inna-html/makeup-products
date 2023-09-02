@@ -27,11 +27,15 @@ a {
     text-decoration: none;
     color: #5d4343;
     font-style: italic;
-    font-style: 32px;
-    
+    font-size: 22px;
 }
+
 a:hover {
     color: #605151;
-    font-style: 38px;
-    font-weight: 700;
+    font-weight: 800;
+}
+
+.imgHeader {
+    width: 40px;
+    height: 40px;
 }
