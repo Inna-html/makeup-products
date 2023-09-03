@@ -20,4 +20,5 @@
 
 ### add details for blush, bronzer,  add navbar in each page, add route for each page and make css, 
 
-# 
+#   3 stp 
+### add all page details, add scroll up 

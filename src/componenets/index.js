@@ -1,6 +1,7 @@
 export * from './home/Home';
 export * from './header/Header';
 export * from './navbar/Navbar';
+export * from './scrollButton/ScrollButton';
 
 export * from './blush/Blush';
 export * from './blush/BlushDetails';

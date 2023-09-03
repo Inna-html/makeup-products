@@ -7,15 +7,15 @@ import css from '../../layout/applayout.module.css';
 
 const LipLiner = () => {
     
-        const [lipLiners, setLipLiners] = useState([]);
+        const [lipliners, setLipliners] = useState([]);
     
         useEffect(() => {
-            lipLinerService.getAll().then(({data}) => setLipLiners(data))
+            lipLinerService.getAll().then(({data}) => setLipliners(data))
         }, [])
         
         return (
             <div>
-                <h1> Welcome to Lipliner category </h1>
+                <h1> Welcome to Lip liner category </h1>
                 <div className={css.navbar}>
                     <ul>
                         <li>Natural</li>
@@ -29,7 +29,7 @@ const LipLiner = () => {
                         <li>Cruelty free</li>
                     </ul>
                 </div>
-                <div>{lipLiners.map(lipLiners => <LipLinerAdd key={lipLiners} lipLiners={lipLiners}/>)}</div>
+                <div className={css.blockCenterContent}>{lipliners.map(lipliner => <LipLinerAdd key={lipliner} lipliner={lipliner}/>)}</div>
             </div>
         )
     };

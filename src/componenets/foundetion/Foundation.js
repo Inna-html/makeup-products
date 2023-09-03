@@ -34,7 +34,7 @@ const Foundation = () => {
                         <li>Silicone free</li>
                     </ul>
                 </div>
-                <div>{foundations.map(foundations => <FoundationAdd key={foundations} foundations={foundations}/>)}</div>
+                <div className={css.blockCenterContent}>{foundations.map(foundations => <FoundationAdd key={foundations} foundations={foundations}/>)}</div>
             </div>
         )
     };

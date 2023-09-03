@@ -1,21 +1,24 @@
-import css from '../../layout/applayout.module.css'
+import { Link } from 'react-router-dom';
+
+import css from '../../layout/applayout.module.css';
+
 
 const MascaraAdd = ({mascaras}) => {
 
-    const {brand, name, price, price_sign, image_link, category, product_type, tag_list, }  = mascaras;
-        // product_link, description, rating, 
-            // product_colors, hex_value, colour_name}
+    const {api_featured_image, brand, name, price, currency, price_sign, 
+        category, product_type}  = mascaras;
 
     return (
         <div className={css.main}>
+            <Link to={'/mascara/'+mascaras.id } state={{...mascaras}}>
             <div className={css.block}>
-                <img src={image_link} alt={brand}/>
+                <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>
-                <div> {name} </div>
-                <div> {tag_list} </div>
-                <div> {price_sign} {price}  </div>
-                <div> {product_type} {category} </div>
-           </div>
+                <p>{name}</p>
+                <p>{price_sign} {price} {currency}</p>
+                <p>{product_type} {category}</p>
+            </div>
+            </Link>
         </div>
     )
 }        

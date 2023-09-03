@@ -34,7 +34,7 @@ const Lipstick = () => {
                         <li>No talc</li>
                     </ul>
                 </div>
-                    <div>{lipsticks.map(lipsticks => <LipstickAdd key={lipsticks} lipsticks={lipsticks}/>)}</div>
+                    <div className={css.blockCenterContent}>{lipsticks.map(lipsticks => <LipstickAdd key={lipsticks} lipsticks={lipsticks}/>)}</div>
                 </div>
             )
         };

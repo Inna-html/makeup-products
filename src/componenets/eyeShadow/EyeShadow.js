@@ -33,7 +33,7 @@ const EyeShadow = () => {
                         <li>Ecocert</li>
                     </ul>
                 </div>
-                <div>{eyeShadows.map(eyeShadows => <EyeShadowAdd key={eyeShadows} eyeShadows={eyeShadows}/>)}</div>
+                <div className={css.blockCenterContent}>{eyeShadows.map(eyeShadows => <EyeShadowAdd key={eyeShadows} eyeShadows={eyeShadows}/>)}</div>
             </div>
         )
     };

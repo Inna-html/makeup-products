@@ -28,7 +28,7 @@ const NailPolish = () => {
                                 <li>Dairy free</li>
                             </ul>
                         </div>
-                        <div>{nailPolishs.map(nailPolishs => <NailPolishAdd key={nailPolishs} nailPolishs={nailPolishs}/>)}</div>
+                        <div className={css.blockCenterContent}>{nailPolishs.map(nailPolishs => <NailPolishAdd key={nailPolishs} nailPolishs={nailPolishs}/>)}</div>
                     </div>
                 )
             };

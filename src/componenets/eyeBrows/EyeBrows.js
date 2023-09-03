@@ -22,11 +22,10 @@ const EyeBrows = () => {
                 <li>Purpicks</li>
             </ul>
             </div>
-            <div>{eyeBrows.map(eyeBrows => <EyeBrowAdd key={eyeBrows} eyeBrows={eyeBrows}/>)}</div>
+            <div className={css.blockCenterContent}>{eyeBrows.map(eyeBrows => <EyeBrowAdd key={eyeBrows} eyeBrows={eyeBrows}/>)}</div>
         </div>
     )
 };
 
 
 export { EyeBrows };
-

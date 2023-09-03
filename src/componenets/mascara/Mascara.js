@@ -32,7 +32,7 @@ const Mascara = () => {
                         <li>Certclean</li>
                     </ul>
                 </div>
-                    <div>{mascaras.map(mascaras => <MascaraAdd key={mascaras} mascaras={mascaras}/>)}</div>
+                    <div className={css.blockCenterContent}>{mascaras.map(mascaras => <MascaraAdd key={mascaras} mascaras={mascaras}/>)}</div>
                 </div>
             )
         };

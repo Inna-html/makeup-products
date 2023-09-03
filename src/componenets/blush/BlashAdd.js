@@ -23,18 +23,5 @@ const BlushAdd = ({blushs}) => {
     )
 }
 
-
-            
-            {/* <div> <button>{product_link}</button>  </div>
-
-            <div> {description} </div>
-            <div> {rating} </div>
- 
-            <div>  </div> */}
-
-{/* {product_colors}  {hex_value} 
-{colour_name} */}
-        
-            
-
 export { BlushAdd };
+

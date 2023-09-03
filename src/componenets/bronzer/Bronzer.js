@@ -27,7 +27,7 @@ const Bronzer = () => {
                 <li>Ewg verified</li>
             </ul>
             </div>
-            <div>{bronzers.map(bronzers => <BronzerAdd key={bronzers} bronzers={bronzers}/>)}</div>
+            <div className={css.blockCenterContent}>{bronzers.map(bronzers => <BronzerAdd key={bronzers} bronzers={bronzers}/>)}</div>
         </div>
     )
 };
