@@ -1,16 +1,13 @@
 .mainLayout {
     width: 100%;
     height: 100%;
-    background: #e4dcdc;
+    background: #f3f2f2;
     display: flex;
     justify-content: center;
 }
 
 .navbar {
     display: flex;
-    /* flex-direction: column; */
-    /* width: 220px;
-    height: 100vh; */
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -29,6 +26,7 @@
 li {
     display: flex;
     flex-direction: row;
+    font-size: 18px;
 }
 
 h1 {
@@ -116,7 +114,6 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     text-align: justify;
     width: 80%;
 
@@ -131,6 +128,7 @@ span {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 10%;
     flex-wrap: wrap;
 }
@@ -151,5 +149,89 @@ span {
 }
 
 .blockDetails img {
+    width: 300px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 769px) {
+li {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    width: 80%;
+}
+
+.navbar {
+    height: 100%;
+}
+
+span {
+    font-size: 18px;
+}
+
+.block {
+    height: 400px;
+    background: #fefefecf;
+}
+
+.block img {
+    width: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px; */
+}
+
+.HomePage {
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.HomePageBlock {
+    width: 80vw;
+}
+
+.imgHome {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+.imgHome img {
+    padding: 20px;
     width: 400px;
+}
+
+.blockDetails {
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-bottom: 10%;
+    width: 80%;
+}
+
+.blockDetails img {
+    width: 50%;
+    padding: 20px;
+}
 }

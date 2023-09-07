@@ -9,6 +9,13 @@
     padding: 0 5% 0 5%;
 }
 
+.homeSign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .right {
     display: flex;
     flex-direction: row;
@@ -35,6 +42,71 @@ a:hover {
 }
 
 .imgHeader {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
+
+.slide_nav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #5d4343;
+    position: absolute;
+    top: 20px;
+    left: 90%;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 769px) {
+    .headers {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-right: 240px;
+    padding-top: 580px;
+}
+
+.right li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    background: #ffffff79;
+    padding: 15px;
+    position: relative;
+}
+
+a {
+    font-size: 14px;
+}
+
+.slide_nav {
+    display: flex;
+}
+
+.slide_nav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #5d4343;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+}
+

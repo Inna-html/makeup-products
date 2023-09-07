@@ -22,3 +22,7 @@
 
 #   3 stp 
 ### add all page details, add scroll up 
+
+# 7 sep 
+### add humburg menu, add adaptive
+
