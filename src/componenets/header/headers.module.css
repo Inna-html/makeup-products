@@ -48,16 +48,16 @@ a:hover {
 
 .slide_nav_btn {
     display: flex;
+    opacity: 0.5;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #5d4343;
     position: absolute;
+    cursor: pointer;
     top: 20px;
     left: 90%;
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (max-width: 769px) {
     .headers {
@@ -74,18 +74,25 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding-right: 240px;
-    padding-top: 580px;
+    width: 10rem;
+    padding-right: 5px;
+    padding-top: 570px;
+
+    transform: translateX(50%); 
+}
+
+.right .active {
+    transform: translateX(0); 
 }
 
 .right li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
     text-align: center;
     width: 150px;
-    background: #ffffff79;
+    background: #ffffffb5;
     padding: 15px;
     position: relative;
 }
@@ -100,6 +107,7 @@ a {
 
 .slide_nav_btn {
     display: flex;
+    opacity: 1;
     justify-content: center;
     align-items: center;
     text-align: center;

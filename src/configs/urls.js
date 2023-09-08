@@ -10,12 +10,8 @@ const urls = {
     lip_liner: '?product_type=lip_liner',
     lipstick: '?product_type=lipstick',
     mascara: '?product_type=mascara',
-    nail_polish: '?product_type=nail_polish',
-
-    
-
-    // powder: '?product_category=powder&product_type=blush',
-    // cream: '?product_category=cream&product_type=blush'
+    nail_polish: '?product_type=nail_polish'
 }
 
 export { baseURL, urls };
+

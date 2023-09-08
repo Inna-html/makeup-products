@@ -1,28 +1,43 @@
-### 26 august 
+# makeup-products
 
-### create project ; add axios, react-router-dom dependencies ;
+### ***Description***
 
-### add all components ; recording the router ;
+### ***How to start***
 
-### add axios service for Blush ; BlushPowder ; BlushCream ; 
+npm start
 
-# did the rendering of Blush Powder, BlushCream ;
+### ***License***
 
-### 27 august
+License [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) Copyright © 2023 Inna-html
 
-### rewrite routes ; add navbar ; add css ; 
+## ***Stages***
 
-### 1 sept 
+### ***Day 1***
 
-### add all page 
+created a project; added axios, react-router-dom dependencies ;
 
-### 2 sep 
+added all the components ; router ;
 
-### add details for blush, bronzer,  add navbar in each page, add route for each page and make css, 
+added axios service for blush; Blush powders; Blush creams ;
 
-#   3 stp 
-### add all page details, add scroll up 
+made a rendering for blush powder, blush cream ;
 
-# 7 sep 
-### add humburg menu, add adaptive
+### ***Day 2***
 
+rewrite routes ; added css ;
+
+### ***Day 3***
+
+added all pages of components
+
+### ***Day 4***
+
+added details for blush, bronzers, added a navbar on each page, added a route for each page and added css;
+
+### ***Day 5***
+
+added all page details ; added scrolling up
+
+### ***Day 6***
+
+added a hamburg menu, added an adaptive
