@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { nailPolishService } from "../../services";
 import { NailPolishAdd } from "./nailPolishAdd";
-import css from '../../layout/applayout.module.css';
+import css from './nailpolish.module.css';
 
 
 const NailPolish = () => {

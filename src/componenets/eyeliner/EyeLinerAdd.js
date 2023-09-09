@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import css from '../../layout/applayout.module.css';
+import css from './eyeliner.module.css';
 
 
 const EyeBrowAdd = ({eyeLiners}) => {

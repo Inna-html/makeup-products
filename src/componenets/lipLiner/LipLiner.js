@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { lipLinerService } from "../../services";
 import { LipLinerAdd } from "./LipLinerAdd";
-import css from '../../layout/applayout.module.css';
+import css from './lipliner.module.css';
 
 
 const LipLiner = () => {

@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import css from '../../layout/applayout.module.css';
+
+import css from './eyeBrows.module.css';
+
 
 const EyeBrowsDetails = () => {
 

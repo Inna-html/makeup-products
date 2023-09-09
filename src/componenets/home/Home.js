@@ -1,4 +1,4 @@
-import css from '../../layout/applayout.module.css';
+import css from './home.module.css';
 
 
 const Home = () => {
@@ -7,9 +7,7 @@ const Home = () => {
         <div className={css.HomePage}>
             
             <div className={css.HomePageBlock}>
-                <h1>
-                    Welcome to the cosmetics selection website.
-                </h1>
+                <h1> Welcome to the cosmetics selection website. </h1>
 
                 <p>
                     Here you can find products such as Blush, Bronzer, Eyebrow, Eyeliner, Eyeshadow, Foundation, Lip liner, Lipstick, Mascara, Nail polish. * <br/>

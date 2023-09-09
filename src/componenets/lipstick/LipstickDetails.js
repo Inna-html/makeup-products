@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import css from '../../layout/applayout.module.css';
+import css from './lipstick.module.css';
 
 const LipstickDetails = () => {
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { eyeBrowService } from "../../services";
 import { EyeBrowAdd } from "./EyeBrowsAdd";
-import css from '../../layout/applayout.module.css'
+import css from './eyeBrows.module.css';
 
 
 const EyeBrows = () => {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { bronzerService } from "../../services";
 import { BronzerAdd } from "./BronzerAdd";
-import css from '../../layout/applayout.module.css';
+import css from './bronzer.module.css';
 
 
 const Bronzer = () => {

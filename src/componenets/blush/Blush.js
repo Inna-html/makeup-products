@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 import { BlushAdd } from "./BlashAdd";
 import { blushService } from "../../services";
-import css from '../../layout/applayout.module.css'
+import css from './blush.module.css';
+
+
 const Blush = () => {
 
     const [blushs, setBlushs] = useState([]);

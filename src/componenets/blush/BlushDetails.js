@@ -1,9 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 
-import css from '../../layout/applayout.module.css';
+import css from './blush.module.css';
 
 
-const BlushDetails = ({}) => {
+const BlushDetails = () => {
 
     const location = useLocation();
     const {state: blush} = location;

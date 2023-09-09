@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { LipstickAdd } from "./LipstickAdd";
 import { lipstickService } from "../../services";
-import css from '../../layout/applayout.module.css';
+import css from './lipstick.module.css';
 
 
 const Lipstick = () => {

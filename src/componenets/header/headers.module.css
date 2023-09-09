@@ -6,7 +6,7 @@
     text-align:right;
     flex-direction: row;
     background: #a1858583;
-    padding: 0 5% 0 5%;
+    padding: 0  100px 0 100px;
 }
 
 .homeSign {
@@ -24,7 +24,7 @@
     gap: 15px;
 }
 
-li {
+.right ul li {
     display: inline-block;
     padding: 10px;
 }

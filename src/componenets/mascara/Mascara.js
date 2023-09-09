@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { MascaraAdd } from "./MascaraAdd";
 import { mascaraService } from "../../services";
-import css from '../../layout/applayout.module.css';
+import css from './mascara.module.css';
 
 
 const Mascara = () => {

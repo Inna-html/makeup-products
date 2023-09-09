@@ -2,6 +2,8 @@
 
 ### ***Description***
 
+A selection of makeup-products of different brands, you can also view the details of the products by clicking on any
+
 ### ***How to start***
 
 npm start

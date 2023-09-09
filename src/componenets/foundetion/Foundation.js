@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { foundationService } from "../../services";
 import { FoundationAdd } from "./FoundationAdd";
-import css from '../../layout/applayout.module.css';
+import css from './foundation.module.css';
 
 
 const Foundation = () => {

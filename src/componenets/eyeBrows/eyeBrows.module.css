@@ -1,0 +1,152 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 10px 10px 10px #927c7c;
+    color: #605151;
+    font-weight: 800;
+    font-size: 34px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #a1858533;
+}
+
+.navbar ul li {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 18px;
+    text-shadow: 10px 10px 10px #927c7c;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.blockCenterContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    float: inline-start;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% -30px);
+    height: 100%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    width: 280px;
+    height: 480px;
+    background: #fefefecf;
+}
+
+.block img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+}
+
+.block:hover {
+    box-shadow: 5px 5px 50px 5px #927c7c;
+}
+
+.blockDetails {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20%;
+}
+
+.blockDetails img {
+    width: 300px;
+}
+
+span {
+    color: #a18585;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+@media (max-width: 769px) {
+
+h1 {
+    font-size: 24px;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.navbar ul li {
+    padding: 8px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.block {
+    width: 240px;
+    height: 400px;
+}
+
+.blockDetails {
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.blockDetails img {
+    width: 250px;
+}
+
+span {
+    font-size: 18px;
+    padding-right: 10px;
+} 
+}
+
+    /* .blur {
+        width: 100%;
+        height: 100%;
+        right: 9rem;
+        backdrop-filter: blur(3px);
+        position: absolute;
+    } */

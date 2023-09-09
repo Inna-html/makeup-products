@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { eyeLinerService } from "../../services";
 import { EyeBrowAdd } from "./EyeLinerAdd";
-import css from '../../layout/applayout.module.css'
+import css from './eyeliner.module.css';
 
 
 const Eyeliner = () => {

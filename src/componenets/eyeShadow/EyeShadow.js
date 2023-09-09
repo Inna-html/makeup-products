@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { EyeShadowAdd } from "./EyeShadowAdd";
 import { eyeShadowService } from "../../services";
-import css from '../../layout/applayout.module.css';
+import css from './eyeshadow.module.css';
 
 
 const EyeShadow = () => {
