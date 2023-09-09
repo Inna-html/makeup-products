@@ -20,8 +20,8 @@ export * from './eyeliner/Eyeliner';
 export * from './eyeliner/EyelinerDetails';
 
 
-export * from './foundetion/Foundation';
-export * from './foundetion/FoundationDetails';
+export * from './foundation/Foundation';
+export * from './foundation/FoundationDetails';
 
 
 export * from './lipLiner/LipLiner';
