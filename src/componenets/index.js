@@ -1,6 +1,8 @@
 export * from './home/Home';
 export * from './header/Header';
 export * from './scrollButton/ScrollButton';
+export * from './errorElement/ErrorElement'
+export * from './footer/Footer';
 
 export * from './blush/Blush';
 export * from './blush/BlushDetails';

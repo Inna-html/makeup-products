@@ -2,20 +2,27 @@ import { Outlet } from "react-router-dom";
 
 import css from './applayout.module.css';
 import ScrollButton from "../componenets/scrollButton/ScrollButton";
-import SlideOutMenuContainer from "../componenets/header/Header";
+import Header from "../componenets/header/Header";
+import { Footer } from "../componenets";
 
 
 const AppLayout = () => {
 
     return (
-        <div>
-            <SlideOutMenuContainer />
+        <div className={css.wrapper}>
+            <div>
+                <Header /> 
+            </div>
+            
             <div className={css.mainLayout}>
-                
-                <div><ScrollButton /></div>
-                
-                <div className={css.outlet}> 
-                <Outlet /> </div>
+                <ScrollButton />
+                <div>
+                    <Outlet />
+                </div>
+            </div>
+
+            <div>
+                <Footer />
             </div>
         </div>
     )
