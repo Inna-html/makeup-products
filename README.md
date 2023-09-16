@@ -43,3 +43,7 @@ added all page details ; added scrolling up
 ### ***Day 6***
 
 added a hamburg menu, added an adaptive
+
+### ***Day 7***
+
+added footer
