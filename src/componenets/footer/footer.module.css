@@ -1,11 +1,12 @@
 .footer {
     height: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background: #80808070;
-    padding: 40px 80px 40px 80px;
+    background: #808080a6;
+    padding: 40px 60px 40px 60px;
 }
 
 .footer span {
@@ -23,3 +24,20 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+@media (max-width: 769px) {
+    .footer {
+        /* width: 100%; */
+    /* padding: 20px 40px 20px 40px; */
+}
+
+.footer span {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 18px;
+}
+}

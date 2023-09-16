@@ -1,5 +1,6 @@
 .headers {
-    height: 100px;
+    min-height: 100px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +63,6 @@ a:hover {
 @media (max-width: 769px) {
     .headers {
     height: 80px;
-    /* width: 100vw; */
     display: flex;
     align-items: center;
     padding: 0 5% 0 5%;
@@ -71,13 +71,12 @@ a:hover {
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 15px;
     width: 10rem;
-    padding-right: 5px;
-    padding-top: 570px;
-
+    padding-right: 50px;
+    padding-top: 500px;
     transform: translateX(50%); 
 }
 

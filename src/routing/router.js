@@ -9,6 +9,7 @@ import { Blush, BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, E
 
 const router = createBrowserRouter([
     {
+        path: '/',
         element: <AppLayout />,
         errorElement: <ErrorElement />,
         children: [

@@ -10,9 +10,9 @@ const AppLayout = () => {
 
     return (
         <div className={css.wrapper}>
-            <div>
+            {/* <div className={css.header}> */}
                 <Header /> 
-            </div>
+            {/* </div> */}
             
             <div className={css.mainLayout}>
                 <ScrollButton />
@@ -21,9 +21,9 @@ const AppLayout = () => {
                 </div>
             </div>
 
-            <div>
+            {/* <div className={css.footer}> */}
                 <Footer />
-            </div>
+            {/* </div> */}
         </div>
     )
 }
