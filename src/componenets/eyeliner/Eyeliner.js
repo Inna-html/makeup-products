@@ -31,7 +31,7 @@ const Eyeliner = () => {
                 <li>Ecocert</li>
             </ul>
             </div>
-            <div className={css.blockCenterContent}>{eyeLiners.map(eyeLiners => <EyeBrowAdd key={eyeLiners} eyeLiners={eyeLiners}/>)}</div>
+            <div className={css.blockCenterContent}>{eyeLiners.map(eyeLiners => <EyeBrowAdd key={eyeLiners.id} eyeLiners={eyeLiners}/>)}</div>
         </div>
     )
 };

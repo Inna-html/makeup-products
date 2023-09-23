@@ -10,7 +10,7 @@ const LipLinerAdd = ({lipliner}) => {
 
     return (
         <div className={css.main}>
-            <Link to={'/lipliner/'+lipliner.id } state={{...lipliner}}>
+            <Link to={`/lipliner/${lipliner.id}`} state={{...lipliner}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

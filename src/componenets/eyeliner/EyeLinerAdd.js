@@ -10,7 +10,7 @@ const EyeBrowAdd = ({eyeLiners}) => {
 
     return (
         <div className={css.main}>
-            <Link to={'/eyeliner/'+eyeLiners.id } state={{...eyeLiners}}>
+            <Link to={`/eyeliner/${eyeLiners.id}`} state={{...eyeLiners}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

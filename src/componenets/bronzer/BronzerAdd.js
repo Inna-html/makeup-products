@@ -10,7 +10,8 @@ const BronzerAdd = ({bronzers}) => {
 
     return (
         <div className={css.main}>
-            <Link to={'/bronzer/'+bronzers.id } state={{...bronzers}}>
+            <Link to={`/bronzer/${bronzers.id}`} state={{...bronzers}}>
+            {/* <Link to={'/bronzer/'+bronzers.id } state={{...bronzers}}> */}
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

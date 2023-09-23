@@ -10,7 +10,7 @@ const MascaraAdd = ({mascaras}) => {
 
     return (
         <div className={css.main}>
-            <Link to={'/mascara/'+mascaras.id } state={{...mascaras}}>
+            <Link to={`/mascara/${mascaras.id}`} state={{...mascaras}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

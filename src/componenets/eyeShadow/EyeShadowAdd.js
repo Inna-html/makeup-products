@@ -10,7 +10,7 @@ const EyeShadowAdd = ({eyeShadows}) => {
 
     return (
         <div className={css.main}>
-            <Link to={'/eyeShadow/'+eyeShadows.id } state={{...eyeShadows}}>
+            <Link to={`/eyeshadow/${eyeShadows.id}`} state={{...eyeShadows}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

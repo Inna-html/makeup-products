@@ -10,7 +10,7 @@ const FoundationAdd = ({foundations}) => {
 
     return (
         <div className={css.main}>
-            <Link to={'/foundation/'+foundations.id } state={{...foundations}}>
+            <Link to={`/foundation/${foundations.id}`} state={{...foundations}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

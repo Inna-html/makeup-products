@@ -10,12 +10,12 @@ export * from './blush/BlushDetails';
 export * from './bronzer/Bronzer';
 export * from './bronzer/BronzerDetails';
 
-export * from './eyeBrows/EyeBrows';
-export * from './eyeBrows/EyeBrowsDetails';
+export * from './eyebrows/EyeBrows';
+export * from './eyebrows/EyeBrowsDetails';
 
 
-export * from './eyeShadow/EyeShadow';
-export * from './eyeShadow/EyeshadowDetails';
+export * from './eyeshadow/EyeShadow';
+export * from './eyeshadow/EyeshadowDetails';
 
 
 export * from './eyeliner/Eyeliner';
@@ -26,8 +26,8 @@ export * from './foundation/Foundation';
 export * from './foundation/FoundationDetails';
 
 
-export * from './lipLiner/LipLiner';
-export * from './lipLiner/LiplinerDetails';
+export * from './lipliner/LipLiner';
+export * from './lipliner/LiplinerDetails';
 
 
 export * from './lipstick/Lipstick';
@@ -38,6 +38,6 @@ export * from './mascara/Mascara';
 export * from './mascara/MascaraDetails';
 
 
-export * from './nailPolish/NailPolish'
-export * from './nailPolish/NailPolishDetails';
+export * from './nailpolish/NailPolish'
+export * from './nailpolish/NailPolishDetails';
 

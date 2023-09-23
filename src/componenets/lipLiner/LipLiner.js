@@ -29,7 +29,7 @@ const LipLiner = () => {
                         <li>Cruelty free</li>
                     </ul>
                 </div>
-                <div className={css.blockCenterContent}>{lipliners.map(lipliner => <LipLinerAdd key={lipliner} lipliner={lipliner}/>)}</div>
+                <div className={css.blockCenterContent}>{lipliners.map(lipliner => <LipLinerAdd key={lipliner.id} lipliner={lipliner}/>)}</div>
             </div>
         )
     };

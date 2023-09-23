@@ -11,70 +11,70 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <AppLayout />,
-        errorElement: <ErrorElement />,
+        errorElement: <errorElement />,
         children: [
             {
-                path: '/home',
+                path: 'home',
                 element: <Home />
             },
             {
-                path: '/blush',
+                path: 'blush',
                 element: <Blush />
             },
             {
-                path:'/blush/:id',
+                path:'blush/:id',
                 element: <BlushDetails />
             },
             {
-                path: '/bronzer',
+                path: 'bronzer',
                 element: <Bronzer />
             },
             {
-                path:'/bronzer/:id',
+                path:'bronzer/:id',
                 element: <BronzerDetails />
             },
             {
-                path: '/eyeBrows',
+                path: 'eyebrows',
                 element: <EyeBrows />
             },
             {
-                path:'/eyeBrows/:id',
+                path:'eyebrows/:id',
                 element: <EyeBrowsDetails />
             },
             {
-                path: '/eyeliner',
+                path: 'eyeliner',
                 element: <Eyeliner />
             },
             {
-                path:'/eyeliner/:id',
+                path:'eyeliner/:id',
                 element: <EyelinerDetails />
             },
             {
-                path: '/eyeShadow',
+                path: 'eyeshadow',
                 element: <EyeShadow />
             },
             {
-                path:'/eyeShadow/:id',
+                path:'eyeshadow/:id',
                 element: <EyeshadowDetails />
             },
             {
-                path: '/foundation',
+                path: 'foundation',
                 element: <Foundation />
             },
             {
-                path:'/foundation/:id',
+                path:'foundation/:id',
                 element: <FoundationDetails />
             },
             {
-                path: '/lipLiner',
+                path: 'lipliner',
                 element: <LipLiner />
             },
             {
-                path:'/lipLiner/:id',
+                path:'lipliner/:id',
                 element: <LiplinerDetails />
             },
             {
-                path: '/lipstick',
+                path: 'lipstick',
                 element: <Lipstick />
             },
             {
@@ -82,18 +82,18 @@ const router = createBrowserRouter([
                 element: <LipstickDetails />
             },
             {
-                path: '/mascara',
+                path: 'mascara',
                 element: <Mascara />
             },{
-                path:'/mascara/:id',
+                path:'mascara/:id',
                 element: <MascaraDetails />
             },
             {
-                path: '/nailPolish',
+                path: 'nailpolish',
                 element: <NailPolish />
             },
             {
-                path:'/nailPolish/:id',
+                path:'nailpolish/:id',
                 element: <NailPolishDetails />
             }
         ]
