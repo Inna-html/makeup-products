@@ -52,5 +52,5 @@ return (
 }
 }
 
-export default Header;
+export  default Header ;
 

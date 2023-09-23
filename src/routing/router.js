@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Outlet, createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layout/AppLayout";
 
 import { Blush, BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, EyeBrowsDetails, EyeShadow, 
@@ -10,8 +10,7 @@ import { Blush, BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, E
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <AppLayout />,
-        errorElement: <errorElement />,
+        element: <AppLayout /> ,
         children: [
             {
                 path: 'home',
@@ -96,7 +95,9 @@ const router = createBrowserRouter([
                 path:'nailpolish/:id',
                 element: <NailPolishDetails />
             }
-        ]
+        ],
+        path: '*',
+        errorElement: <ErrorElement />
     }
 ]);
 
