@@ -8,7 +8,6 @@ import { Footer } from "../componenets";
 
 const AppLayout = () => {
 
-    console.log('layout');
     return (
         <div className={css.wrapper}>
             <div><Header /></div>

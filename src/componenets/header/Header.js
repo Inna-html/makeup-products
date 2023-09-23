@@ -16,8 +16,6 @@ class Header extends Component {
 
     const { visible} = this.state;
 
-
-    console.log('heder');
 return (
       <div className={css.headers}>
         

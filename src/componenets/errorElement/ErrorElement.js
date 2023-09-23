@@ -2,8 +2,8 @@ import css from './errorElement.module.css';
 
 
 const ErrorElement = () => {
-console.log('errer');
 
+console.log('was error');
 
     return (
     <div className={css.oopsy}>
