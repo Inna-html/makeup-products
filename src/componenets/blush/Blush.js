@@ -33,7 +33,9 @@ const Blush = () => {
             </ul>
             </div>
             
-            <div className={css.blockCenterContent}>{blushs.map(blushs => <BlushAdd key={blushs.id} blushs={blushs}/>)}</div>
+            <div className={css.blockCenterContent}>
+                {blushs.map(blushs => <BlushAdd key={blushs.id} blushs={blushs}/>)}
+            </div>
             
         </div>
     )

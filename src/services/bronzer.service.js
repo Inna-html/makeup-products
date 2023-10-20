@@ -6,3 +6,4 @@ const bronzerService = {
 };
 
 export { bronzerService };
+

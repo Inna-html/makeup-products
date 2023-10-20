@@ -1,4 +1,4 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layout/AppLayout";
 
 import { Blush, BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, EyeBrowsDetails, EyeShadow, 
@@ -12,6 +12,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <AppLayout /> ,
         children: [
+            {
+                index: true,
+                element: <Navigate to={"home"} replace />
+            },
             {
                 path: 'home',
                 element: <Home />

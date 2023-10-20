@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import css from './headers.module.css'
 
@@ -10,11 +10,12 @@ class Header extends Component {
   this.state = {
     visible: false,
   };
-}
+};
 
   render() {
 
     const { visible} = this.state;
+
 
 return (
       <div className={css.headers}>
@@ -26,10 +27,9 @@ return (
           </Link> 
         </div>
 
-        <div className={css.right}>
+        <div className={css.right} >
             <ul style={{ display: (visible ? 'block' : 'none') }}>
-            <li> <Link to={'/blush'}>Blush</Link>  
-            </li>
+            <li> <Link to={'/blush'}>Blush</Link> </li>
             <li> <Link to={'/bronzer'}>Bronzer </Link>  </li>
             <li> <Link to={'/eyebrows'}>Eyebrows</Link> </li>
             <li> <Link to={'/eyeshadow'}>Eyeshadow </Link> </li>
@@ -45,6 +45,7 @@ return (
         <div className={css.slide_nav}> 
             <p className={css.slide_nav_btn} onClick={() => this.setState({visible : !visible } )}>☰</p>
         </div>
+        
       </div>
     )
 }

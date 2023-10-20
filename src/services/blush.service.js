@@ -15,4 +15,3 @@ const blushService = {
 export { blushService, 
     // blushPowderService, blushCreamService 
 };
-

@@ -45,7 +45,7 @@ p {
 
 .main {
     display: flex;
-    float: inline-start;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: calc(100% -30px);

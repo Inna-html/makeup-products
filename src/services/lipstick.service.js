@@ -6,3 +6,4 @@ const lipstickService = {
 };
 
 export { lipstickService };
+
