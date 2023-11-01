@@ -6,9 +6,9 @@ import css from './eyeshadow.module.css';
 const EyeshadowDetails = () => {
 
     const location = useLocation();
-    const {state: eyeShadows} = location;
+    const {state: eyeShadow} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = eyeShadows;
+            product_link, website_link, description} = eyeShadow;
 
     return (
         <div>

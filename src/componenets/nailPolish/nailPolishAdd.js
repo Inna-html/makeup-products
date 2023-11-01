@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import css from './nailpolish.module.css';
 
 
-const NailPolishAdd = ({nailPolishs}) => {
+const NailPolishAdd = ({nailPolish}) => {
 
     const {api_featured_image, brand, name, price, currency, price_sign, 
-        category, product_type}  = nailPolishs;
+        category, product_type}  = nailPolish;
 
     return (
         <div className={css.main}>
-            <Link to={`/nailpolish/${nailPolishs.id}`} state={{...nailPolishs}}>
+            <Link to={`/nailpolish/${nailPolish.id}`} state={{...nailPolish}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

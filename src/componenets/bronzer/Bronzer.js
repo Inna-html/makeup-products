@@ -10,7 +10,11 @@ const Bronzer = () => {
     const [bronzers, setBronzers] = useState([]);
 
     useEffect(() => {
-        bronzerService.getAll().then(({data}) => setBronzers(data))
+        try {
+            bronzerService.getAll().then(({data}) => setBronzers(data))
+        } catch (error) {
+            setTimeout(alert('The data of bronzer is not loaded'), 5000)
+        }
     }, [])
     
     return (
@@ -27,7 +31,9 @@ const Bronzer = () => {
                 <li>Ewg verified</li>
             </ul>
             </div>
-            <div className={css.blockCenterContent}>{bronzers.map(bronzers => <BronzerAdd key={bronzers.id} bronzers={bronzers}/>)}</div>
+            <div className={css.blockCenterContent}>
+                {bronzers.map(bronzer => <BronzerAdd key={bronzer.id} bronzer={bronzer}/>)}
+            </div>
         </div>
     )
 };

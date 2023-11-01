@@ -10,7 +10,11 @@ const Eyeliner = () => {
     const [eyeLiners, setEyeLiners] = useState([]);
 
     useEffect(() => {
-        eyeLinerService.getAll().then(({data}) => setEyeLiners(data))
+        try {
+            eyeLinerService.getAll().then(({data}) => setEyeLiners(data))
+        } catch (error) {
+            setTimeout(alert('The data of eyeliner is not loaded'), 5000)
+        }
     }, [])
     
     return (
@@ -31,7 +35,9 @@ const Eyeliner = () => {
                 <li>Ecocert</li>
             </ul>
             </div>
-            <div className={css.blockCenterContent}>{eyeLiners.map(eyeLiners => <EyeBrowAdd key={eyeLiners.id} eyeLiners={eyeLiners}/>)}</div>
+            <div className={css.blockCenterContent}>
+                {eyeLiners.map(eyeLiner => <EyeBrowAdd key={eyeLiner.id} eyeLiner={eyeLiner}/>)}
+            </div>
         </div>
     )
 };

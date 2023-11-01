@@ -6,9 +6,9 @@ import css from './eyeBrows.module.css';
 const EyeBrowsDetails = () => {
 
     const location = useLocation();
-    const {state: eyeBrows} = location;
+    const {state: eyeBrow} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = eyeBrows;
+            product_link, website_link, description} = eyeBrow;
 
     return (
         <div>

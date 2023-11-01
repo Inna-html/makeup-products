@@ -10,7 +10,12 @@ const Mascara = () => {
             const [mascaras, setMascaras] = useState([]);
             
             useEffect(() => {
-                mascaraService.getAll().then(({data}) => setMascaras(data))
+               
+                try {
+                    mascaraService.getAll().then(({data}) => setMascaras(data))
+                } catch (error) {
+                setTimeout(alert('The data of mascara is not loaded'), 5000)
+                }
             }, [])
                 
             return (
@@ -32,7 +37,9 @@ const Mascara = () => {
                         <li>Certclean</li>
                     </ul>
                 </div>
-                    <div className={css.blockCenterContent}>{mascaras.map(mascaras => <MascaraAdd key={mascaras.id} mascaras={mascaras}/>)}</div>
+                    <div className={css.blockCenterContent}>
+                        {mascaras.map(mascara => <MascaraAdd key={mascara.id} mascara={mascara}/>)}
+                    </div>
                 </div>
             )
         };

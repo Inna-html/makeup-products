@@ -5,9 +5,9 @@ import css from './lipstick.module.css';
 const LipstickDetails = () => {
 
     const location = useLocation();
-    const {state: lipsticks} = location;
+    const {state: lipstick} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = lipsticks;
+            product_link, website_link, description} = lipstick;
 
     return (
         <div>

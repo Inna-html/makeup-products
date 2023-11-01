@@ -10,7 +10,11 @@ const EyeShadow = () => {
         const [eyeShadows, setEyeShadows] = useState([]);
     
         useEffect(() => {
-            eyeShadowService.getAll().then(({data}) => setEyeShadows(data))
+            try {
+                eyeShadowService.getAll().then(({data}) => setEyeShadows(data))
+            } catch (error) {
+                setTimeout(alert('The data of eyeshadow is not loaded'), 5000)
+            }
         }, [])
         
         return (
@@ -34,7 +38,7 @@ const EyeShadow = () => {
                     </ul>
                 </div>
                 <div className={css.blockCenterContent}>
-                    {eyeShadows.map(eyeShadows => <EyeShadowAdd key={eyeShadows.id} eyeShadows={eyeShadows}/>)}
+                    {eyeShadows.map(eyeShadow => <EyeShadowAdd key={eyeShadow.id} eyeShadow={eyeShadow}/>)}
                 </div>
             </div>
         )

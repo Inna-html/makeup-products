@@ -7,7 +7,8 @@ const Footer = () => {
             <div>
                 <span>Info: </span> 
                 <p>
-                    The selection was created on the basis of old data, but links to cosmetics websites have been added to the products, where you can pick up an analog.
+                    The selection was created on the basis of old data, but links to cosmetics 
+                    websites have been added to the products, where you can pick up an analog.
                 </p>
             </div> 
         </div>

@@ -6,9 +6,9 @@ import css from './mascara.module.css';
 const MascaraDetails = () => {
 
     const location = useLocation();
-    const {state: mascaras} = location;
+    const {state: mascara} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = mascaras;
+            product_link, website_link, description} = mascara;
 
     return (
         <div>

@@ -6,9 +6,9 @@ import css from './foundation.module.css';
 const FoundationDetails = () => {
 
     const location = useLocation();
-    const {state: foundations} = location;
+    const {state: foundation} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = foundations;
+            product_link, website_link, description} = foundation;
 
     return (
         <div>

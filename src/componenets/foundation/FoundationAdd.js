@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import css from './foundation.module.css';
 
 
-const FoundationAdd = ({foundations}) => {
+const FoundationAdd = ({foundation}) => {
 
     const {api_featured_image, brand, name, price, currency, price_sign, 
-        category, product_type}  = foundations;
+        category, product_type}  = foundation;
 
     return (
         <div className={css.main}>
-            <Link to={`/foundation/${foundations.id}`} state={{...foundations}}>
+            <Link to={`/foundation/${foundation.id}`} state={{...foundation}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

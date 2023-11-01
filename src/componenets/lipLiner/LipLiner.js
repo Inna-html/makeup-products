@@ -10,7 +10,11 @@ const LipLiner = () => {
         const [lipliners, setLipliners] = useState([]);
     
         useEffect(() => {
-            lipLinerService.getAll().then(({data}) => setLipliners(data))
+            try {
+                lipLinerService.getAll().then(({data}) => setLipliners(data))
+            } catch (error) {
+                setTimeout(alert('The data of lip liner is not loaded'), 5000)
+            }
         }, [])
         
         return (
@@ -29,7 +33,9 @@ const LipLiner = () => {
                         <li>Cruelty free</li>
                     </ul>
                 </div>
-                <div className={css.blockCenterContent}>{lipliners.map(lipliner => <LipLinerAdd key={lipliner.id} lipliner={lipliner}/>)}</div>
+                <div className={css.blockCenterContent}>
+                    {lipliners.map(lipliner => <LipLinerAdd key={lipliner.id} lipliner={lipliner}/>)}
+                </div>
             </div>
         )
     };

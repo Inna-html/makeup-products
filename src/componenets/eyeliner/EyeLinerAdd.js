@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import css from './eyeliner.module.css';
 
 
-const EyeBrowAdd = ({eyeLiners}) => {
+const EyeBrowAdd = ({eyeLiner}) => {
 
     const {api_featured_image, brand, name, price, currency, price_sign, 
-        category, product_type}  = eyeLiners;
+        category, product_type}  = eyeLiner;
 
     return (
         <div className={css.main}>
-            <Link to={`/eyeliner/${eyeLiners.id}`} state={{...eyeLiners}}>
+            <Link to={`/eyeliner/${eyeLiner.id}`} state={{...eyeLiner}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

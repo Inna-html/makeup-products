@@ -10,7 +10,11 @@ const EyeBrows = () => {
     const [eyeBrows, setEyeBrows] = useState([]);
 
     useEffect(() => {
-        eyeBrowService.getAll().then(({data}) => setEyeBrows(data))
+        try {
+            eyeBrowService.getAll().then(({data}) => setEyeBrows(data))
+        } catch (error) {
+            setTimeout(alert('The data of eyebrows is not loaded'), 5000)
+        }
     }, [])
     
     return (
@@ -22,7 +26,9 @@ const EyeBrows = () => {
                 <li>Purpicks</li>
             </ul>
             </div>
-            <div className={css.blockCenterContent}>{eyeBrows.map(eyeBrows => <EyeBrowAdd key={eyeBrows.id} eyeBrows={eyeBrows}/>)}</div>
+            <div className={css.blockCenterContent}>
+                {eyeBrows.map(eyeBrow => <EyeBrowAdd key={eyeBrow.id} eyeBrow={eyeBrow}/>)}
+            </div>
         </div>
     )
 };

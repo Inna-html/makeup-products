@@ -6,9 +6,9 @@ import css from './eyeliner.module.css';
 const EyelinerDetails = () => {
 
     const location = useLocation();
-    const {state: eyeLiners} = location;
+    const {state: eyeLiner} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = eyeLiners;
+            product_link, website_link, description} = eyeLiner;
 
 return (
     <div>

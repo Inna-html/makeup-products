@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import css from './bronzer.module.css';
 
 
-const BronzerAdd = ({bronzers}) => {
+const BronzerAdd = ({bronzer}) => {
 
     const {api_featured_image, brand, name, price, currency, price_sign, 
-            category, product_type}  = bronzers;
+            category, product_type}  = bronzer;
 
     return (
         <div className={css.main}>
-            <Link to={`/bronzer/${bronzers.id}`} state={{...bronzers}}>
+            <Link to={`/bronzer/${bronzer.id}`} state={{...bronzer}}>
             {/* <Link to={'/bronzer/'+bronzers.id } state={{...bronzers}}> */}
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>

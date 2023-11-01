@@ -6,9 +6,9 @@ import css from './nailpolish.module.css';
 const NailPolishDetails = () => {
 
     const location = useLocation();
-    const {state: NailPolishs} = location;
+    const {state: nailPolish} = location;
     const {api_featured_image, brand, name, tag_list, price_sign, price, currency, product_type, category, 
-            product_link, website_link, description} = NailPolishs;
+            product_link, website_link, description} = nailPolish;
 
     return (
         <div>

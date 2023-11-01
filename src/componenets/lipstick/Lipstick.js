@@ -10,7 +10,11 @@ const Lipstick = () => {
             const [lipsticks, setLipsticks] = useState([]);
         
             useEffect(() => {
-                lipstickService.getAll().then(({data}) => setLipsticks(data))
+                try {
+                    lipstickService.getAll().then(({data}) => setLipsticks(data))
+                } catch (error) {
+                setTimeout(alert('The data of lipstick is not loaded'), 5000)
+                }
             }, [])
             
             return (
@@ -34,7 +38,9 @@ const Lipstick = () => {
                         <li>No talc</li>
                     </ul>
                 </div>
-                    <div className={css.blockCenterContent}>{lipsticks.map(lipsticks => <LipstickAdd key={lipsticks.id} lipsticks={lipsticks}/>)}</div>
+                    <div className={css.blockCenterContent}>
+                        {lipsticks.map(lipstick => <LipstickAdd key={lipstick.id} lipstick={lipstick}/>)}
+                    </div>
                 </div>
             )
         };

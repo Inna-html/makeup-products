@@ -10,7 +10,11 @@ const Foundation = () => {
         const [foundations, setFoundations] = useState([]);
     
         useEffect(() => {
-            foundationService.getAll().then(({data}) => setFoundations(data))
+            try {
+                foundationService.getAll().then(({data}) => setFoundations(data))
+            } catch (error) {
+                setTimeout(alert('The data of foundation is not loaded'), 5000)
+            }
         }, [])
         
         return (
@@ -34,7 +38,9 @@ const Foundation = () => {
                         <li>Silicone free</li>
                     </ul>
                 </div>
-                <div className={css.blockCenterContent}>{foundations.map(foundations => <FoundationAdd key={foundations.id} foundations={foundations}/>)}</div>
+                <div className={css.blockCenterContent}>
+                    {foundations.map(foundation => <FoundationAdd key={foundation.id} foundation={foundation}/>)}
+                </div>
             </div>
         )
     };

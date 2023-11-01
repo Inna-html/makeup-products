@@ -10,7 +10,11 @@ const Blush = () => {
     const [blushs, setBlushs] = useState([]);
 
     useEffect(() => {
-        blushService.getAll().then(({data}) => setBlushs(data))
+        try {
+            blushService.getAll().then(({data}) => setBlushs(data))
+        } catch (error) {
+            setTimeout(alert('The data of blush is not loaded'), 5000)
+        }
     }, [])
     
     return (
@@ -34,7 +38,7 @@ const Blush = () => {
             </div>
             
             <div className={css.blockCenterContent}>
-                {blushs.map(blushs => <BlushAdd key={blushs.id} blushs={blushs}/>)}
+                {blushs.map(blush => <BlushAdd key={blush.id} blush={blush}/>)}
             </div>
             
         </div>

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import css from './lipstick.module.css';
 
 
-const LipstickAdd = ({lipsticks}) => {
+const LipstickAdd = ({lipstick}) => {
 
     const {api_featured_image, brand, name, price, currency, price_sign, 
-        category, product_type}  = lipsticks;
+        category, product_type}  = lipstick;
 
     return (
         <div className={css.main}>
-            <Link to={`/lipstick/${lipsticks.id}`} state={{...lipsticks}}>
+            <Link to={`/lipstick/${lipstick.id}`} state={{...lipstick}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
                 <h1>{brand}</h1>

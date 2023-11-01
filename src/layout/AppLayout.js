@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 import css from './applayout.module.css';
 import ScrollButton from "../componenets/scrollButton/ScrollButton";
@@ -15,7 +15,11 @@ const AppLayout = () => {
             <div className={css.mainLayout}>
                 <ScrollButton />
 
-                <div><Outlet /></div>
+                <div><Outlet />
+                
+                    <Navigate to={'home'} />
+                
+                </div>
             </div>
             
             <div><Footer /></div>

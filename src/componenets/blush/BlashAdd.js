@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import css from './blush.module.css';
 
 
-const BlushAdd = ({blushs}) => {
+const BlushAdd = ({blush}) => {
 
     const {brand, name, price, price_sign, api_featured_image, 
-            currency, category, product_type, }  = blushs;
+            currency, category, product_type, }  = blush;
 
     return (
         <div className={css.main}>
-            <Link to={`/blush/${blushs.id}`} state={{...blushs}}>
+            <Link to={`/blush/${blush.id}`} state={{...blush}}>
             {/* <Link to={'/blush/'+blushs.id } state={{...blushs}}> */}
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
