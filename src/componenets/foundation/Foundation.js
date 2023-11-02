@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 import { foundationService } from "../../services";
 import { FoundationAdd } from "./FoundationAdd";
 import css from './foundation.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const Foundation = () => {
 
-        const [foundations, setFoundations] = useState([]);
+    const [foundations, setFoundations] = useState([]);
+    const [hasError, setHasError] = useState(false);
     
-        useEffect(() => {
-            try {
-                foundationService.getAll().then(({data}) => setFoundations(data))
-            } catch (error) {
-                setTimeout(alert('The data of foundation is not loaded'), 5000)
-            }
-        }, [])
+    useEffect(() => {
+        try {
+            foundationService.getAll().then(({data}) => setFoundations(data))
+        } catch (error) {
+            setTimeout((setHasError(true)), 5000);
+        }
+    }, [])
+    
+    if (hasError) return <HasError />
         
         return (
             <div>

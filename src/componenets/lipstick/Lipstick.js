@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 import { LipstickAdd } from "./LipstickAdd";
 import { lipstickService } from "../../services";
 import css from './lipstick.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const Lipstick = () => {
         
-            const [lipsticks, setLipsticks] = useState([]);
+    const [lipsticks, setLipsticks] = useState([]);
+    const [hasError, setHasError] = useState(false);
         
-            useEffect(() => {
-                try {
-                    lipstickService.getAll().then(({data}) => setLipsticks(data))
-                } catch (error) {
-                setTimeout(alert('The data of lipstick is not loaded'), 5000)
-                }
-            }, [])
+        useEffect(() => {
+            try {
+                lipstickService.getAll().then(({data}) => setLipsticks(data))
+            } catch (error) {
+                setTimeout((setHasError(true)), 5000);
+            }
+        }, [])
+    
+        if (hasError) return <HasError />
             
             return (
                 <div>

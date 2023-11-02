@@ -15,10 +15,9 @@ const AppLayout = () => {
             <div className={css.mainLayout}>
                 <ScrollButton />
 
-                <div><Outlet />
-                
-                    <Navigate to={'home'} />
-                
+                <div>
+                    <Outlet />
+                    <Navigate to={'/home'} replace={false} /> 
                 </div>
             </div>
             

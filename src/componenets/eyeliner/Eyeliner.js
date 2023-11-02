@@ -3,19 +3,22 @@ import { useEffect, useState } from "react";
 import { eyeLinerService } from "../../services";
 import { EyeBrowAdd } from "./EyeLinerAdd";
 import css from './eyeliner.module.css';
-
+import { HasError } from "../HasError/HasError";
 
 const Eyeliner = () => {
 
     const [eyeLiners, setEyeLiners] = useState([]);
+    const [hasError, setHasError] = useState(false);
 
     useEffect(() => {
         try {
             eyeLinerService.getAll().then(({data}) => setEyeLiners(data))
         } catch (error) {
-            setTimeout(alert('The data of eyeliner is not loaded'), 5000)
+            setTimeout((setHasError(true)), 5000);
         }
     }, [])
+
+    if (hasError) return <HasError />
     
     return (
         <div>

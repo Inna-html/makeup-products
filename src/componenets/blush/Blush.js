@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 import { BlushAdd } from "./BlashAdd";
 import { blushService } from "../../services";
 import css from './blush.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const Blush = () => {
 
     const [blushs, setBlushs] = useState([]);
+    const [hasError, setHasError] = useState(false);
 
     useEffect(() => {
         try {
-            blushService.getAll().then(({data}) => setBlushs(data))
+            blushService.getAll().then(({data}) => setBlushs(data));
         } catch (error) {
-            setTimeout(alert('The data of blush is not loaded'), 5000)
+            setTimeout((setHasError(true)), 5000);
         }
     }, [])
+
+    if (hasError) return <HasError />
     
     return (
         <div>

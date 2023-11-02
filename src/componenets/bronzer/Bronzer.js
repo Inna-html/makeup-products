@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 import { bronzerService } from "../../services";
 import { BronzerAdd } from "./BronzerAdd";
 import css from './bronzer.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const Bronzer = () => {
 
     const [bronzers, setBronzers] = useState([]);
+    const [hasError, setHasError] = useState(false);
 
     useEffect(() => {
         try {
             bronzerService.getAll().then(({data}) => setBronzers(data))
         } catch (error) {
-            setTimeout(alert('The data of bronzer is not loaded'), 5000)
+            setTimeout((setHasError(true)), 5000);
         }
     }, [])
+
+    if (hasError) return <HasError />
     
     return (
         <div>

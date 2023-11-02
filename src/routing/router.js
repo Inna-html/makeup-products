@@ -12,10 +12,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <AppLayout /> ,
         children: [
-            // {
-            //     index: true,
-            //     element: <Navigate to={'home'} />
-            // },
+            {
+                index: true,
+                element: <Navigate to={'home'} />,
+            },
             {
                 path: 'home',
                 element: <Home />

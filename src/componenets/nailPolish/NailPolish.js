@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 import { nailPolishService } from "../../services";
 import { NailPolishAdd } from "./nailPolishAdd";
 import css from './nailpolish.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const NailPolish = () => {
 
     const [nailPolishs, setNailPolishs] = useState([]);
+    const [hasError, setHasError] = useState(false);
                 
-        useEffect(() => {
-            try {
-                nailPolishService.getAll().then(({data}) => setNailPolishs(data))
-            } catch (error) {
-                setTimeout(alert('The data of nail polish is not loaded'), 5000)
-            }
-        }, [])
+    useEffect(() => {
+        try {
+            nailPolishService.getAll().then(({data}) => setNailPolishs(data))
+        } catch (error) {
+            setTimeout((setHasError(true)), 5000);
+        }
+    }, [])
+    
+        if (hasError) return <HasError />
                     
         return (
             <div>

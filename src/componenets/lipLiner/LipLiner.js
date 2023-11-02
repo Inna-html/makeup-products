@@ -3,19 +3,22 @@ import { useEffect, useState } from "react";
 import { lipLinerService } from "../../services";
 import { LipLinerAdd } from "./LipLinerAdd";
 import css from './lipliner.module.css';
-
+import { HasError } from "../HasError/HasError";
 
 const LipLiner = () => {
     
-        const [lipliners, setLipliners] = useState([]);
-    
+    const [lipliners, setLipliners] = useState([]);
+    const [hasError, setHasError] = useState(false);
+
         useEffect(() => {
             try {
                 lipLinerService.getAll().then(({data}) => setLipliners(data))
             } catch (error) {
-                setTimeout(alert('The data of lip liner is not loaded'), 5000)
+                setTimeout((setHasError(true)), 5000);
             }
         }, [])
+    
+        if (hasError) return <HasError />
         
         return (
             <div>

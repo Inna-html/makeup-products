@@ -3,19 +3,22 @@ import { useEffect, useState } from "react";
 import { eyeBrowService } from "../../services";
 import { EyeBrowAdd } from "./EyeBrowsAdd";
 import css from './eyeBrows.module.css';
-
+import { HasError } from "../HasError/HasError";
 
 const EyeBrows = () => {
 
     const [eyeBrows, setEyeBrows] = useState([]);
+    const [hasError, setHasError] = useState(false);
 
     useEffect(() => {
         try {
             eyeBrowService.getAll().then(({data}) => setEyeBrows(data))
         } catch (error) {
-            setTimeout(alert('The data of eyebrows is not loaded'), 5000)
+            setTimeout((setHasError(true)), 5000);
         }
     }, [])
+
+    if (hasError) return <HasError />
     
     return (
         <div>

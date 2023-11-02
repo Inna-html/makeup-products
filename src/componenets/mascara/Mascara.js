@@ -3,20 +3,23 @@ import { useEffect, useState } from "react";
 import { MascaraAdd } from "./MascaraAdd";
 import { mascaraService } from "../../services";
 import css from './mascara.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const Mascara = () => {
 
-            const [mascaras, setMascaras] = useState([]);
+    const [mascaras, setMascaras] = useState([]);
+    const [hasError, setHasError] = useState(false);
             
-            useEffect(() => {
-               
-                try {
-                    mascaraService.getAll().then(({data}) => setMascaras(data))
-                } catch (error) {
-                setTimeout(alert('The data of mascara is not loaded'), 5000)
-                }
-            }, [])
+    useEffect(() => {     
+        try {
+            mascaraService.getAll().then(({data}) => setMascaras(data))
+        } catch (error) {
+            setTimeout((setHasError(true)), 5000);
+        }
+    }, [])
+
+    if (hasError) return <HasError />
                 
             return (
                 <div>

@@ -3,19 +3,24 @@ import { useEffect, useState } from "react";
 import { EyeShadowAdd } from "./EyeShadowAdd";
 import { eyeShadowService } from "../../services";
 import css from './eyeshadow.module.css';
+import { HasError } from "../HasError/HasError";
 
 
 const EyeShadow = () => {
 
-        const [eyeShadows, setEyeShadows] = useState([]);
+    const [eyeShadows, setEyeShadows] = useState([]);
+    const [hasError, setHasError] = useState(false);
+        
     
-        useEffect(() => {
-            try {
-                eyeShadowService.getAll().then(({data}) => setEyeShadows(data))
-            } catch (error) {
-                setTimeout(alert('The data of eyeshadow is not loaded'), 5000)
-            }
-        }, [])
+    useEffect(() => {
+        try {
+            eyeShadowService.getAll().then(({data}) => setEyeShadows(data))
+        } catch (error) {
+            setTimeout((setHasError(true)), 5000);
+        }
+    }, [])
+    
+    if (hasError) return <HasError />
         
         return (
             <div>
