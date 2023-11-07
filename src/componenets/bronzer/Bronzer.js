@@ -14,6 +14,7 @@ const Bronzer = () => {
     useEffect(() => {
         try {
             bronzerService.getAll().then(({data}) => setBronzers(data))
+            
         } catch (error) {
             setTimeout((setHasError(true)), 5000);
         }
