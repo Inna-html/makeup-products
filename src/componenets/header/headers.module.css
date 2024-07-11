@@ -37,8 +37,10 @@ a {
     font-size: 22px;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #605151;
+    font-weight: 700;
     text-shadow: 1px 1px 2px #786565;
 }
 

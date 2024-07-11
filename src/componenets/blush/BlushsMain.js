@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { blushService } from "../../services";
 import { HasError } from "../HasError/HasError";
 import { Blush } from "./Blush";
@@ -68,6 +69,4 @@ const BlushsMain = () => {
 };
 
 export { BlushsMain };
-
-
 

@@ -2,10 +2,17 @@ import { Navigate, createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layout/AppLayout";
 
 import {
-    BlushsMain,
-    BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, EyeBrowsDetails, EyeShadow,
-    Eyeliner, EyelinerDetails, EyeshadowDetails, Foundation, FoundationDetails, Home,
-    LipLiner, LiplinerDetails, Lipstick, LipstickDetails, Mascara, MascaraDetails, NailPolish, NailPolishDetails
+    ErrorElement, Home,
+    BlushsMain, BlushDetails, 
+    BronzerMain, BronzerDetails, 
+    EyeBrowsMain, EyeBrowsDetails,
+    EyeShadowMain, EyeshadowDetails,
+    EyelinerMain, EyelinerDetails,
+    FoundationMain, FoundationDetails, 
+    LipLinerMain, LiplinerDetails,
+    LipstickMain, LipstickDetails,
+    MascaraMain, MascaraDetails,
+    NailPolishMain, NailPolishDetails
 } from "../componenets";
 
 
@@ -33,7 +40,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'bronzer',
-                element: <Bronzer />
+                element: <BronzerMain />
             },
             {
                 path: 'bronzer/:id',
@@ -41,7 +48,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'eyebrows',
-                element: <EyeBrows />
+                element: <EyeBrowsMain />
             },
             {
                 path: 'eyebrows/:id',
@@ -49,7 +56,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'eyeliner',
-                element: <Eyeliner />
+                element: <EyelinerMain />
             },
             {
                 path: 'eyeliner/:id', 
@@ -57,7 +64,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'eyeshadow',
-                element: <EyeShadow />
+                element: <EyeShadowMain />
             },
             {
                 path: 'eyeshadow/:id',
@@ -65,7 +72,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'foundation',
-                element: <Foundation />
+                element: <FoundationMain />
             },
             {
                 path: 'foundation/:id',
@@ -73,7 +80,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'lipliner',
-                element: <LipLiner />
+                element: <LipLinerMain />
             },
             {
                 path: 'lipliner/:id',
@@ -81,7 +88,7 @@ const router = createBrowserRouter(
             },
             {
                 path: 'lipstick',
-                element: <Lipstick />
+                element: <LipstickMain />
             },
             {
                 path: 'lipstick/:id',
@@ -89,14 +96,14 @@ const router = createBrowserRouter(
             },
             {
                 path: 'mascara',
-                element: <Mascara />
+                element: <MascaraMain />
             }, {
                 path: 'mascara/:id',
                 element: <MascaraDetails />
             },
             {
                 path: 'nailpolish',
-                element: <NailPolish />
+                element: <NailPolishMain />
             },
             {
                 path: 'nailpolish/:id',

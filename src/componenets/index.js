@@ -11,37 +11,47 @@ export * from './blush/BlushsMain'
 export * from './blush/Blush';
 export * from './blush/BlushDetails';
 
+
+export * from './bronzer/BronzerMain';
 export * from './bronzer/Bronzer';
 export * from './bronzer/BronzerDetails';
 
+
+export * from './eyebrows/EyebrowsMain';
 export * from './eyebrows/EyeBrows';
 export * from './eyebrows/EyeBrowsDetails';
 
 
+export * from './eyeshadow/EyeshadowMain';
 export * from './eyeshadow/EyeShadow';
 export * from './eyeshadow/EyeshadowDetails';
 
 
+export * from './eyeliner/EyelinerMain';
 export * from './eyeliner/Eyeliner';
 export * from './eyeliner/EyelinerDetails';
 
 
+export * from './foundation/FoundationMain';
 export * from './foundation/Foundation';
 export * from './foundation/FoundationDetails';
 
 
+export * from './lipliner/LiplinerMain';
 export * from './lipliner/LipLiner';
 export * from './lipliner/LiplinerDetails';
 
 
+export * from './lipstick/LipstickMain';
 export * from './lipstick/Lipstick';
 export * from './lipstick/LipstickDetails';
 
 
+export * from './mascara/MascaraMain';
 export * from './mascara/Mascara';
 export * from './mascara/MascaraDetails';
 
 
+export * from './nailpolish/NailPolishMain';
 export * from './nailpolish/NailPolish'
 export * from './nailpolish/NailPolishDetails';
-
