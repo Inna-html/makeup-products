@@ -1,20 +1,23 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layout/AppLayout";
 
-import { Blush, BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, EyeBrowsDetails, EyeShadow, 
-            Eyeliner, EyelinerDetails, EyeshadowDetails, Foundation, FoundationDetails, Home, 
-            LipLiner, LiplinerDetails, Lipstick, LipstickDetails, Mascara, MascaraDetails, NailPolish, NailPolishDetails
-        } from "../componenets";
+import {
+    BlushsMain,
+    BlushDetails, Bronzer, BronzerDetails, ErrorElement, EyeBrows, EyeBrowsDetails, EyeShadow,
+    Eyeliner, EyelinerDetails, EyeshadowDetails, Foundation, FoundationDetails, Home,
+    LipLiner, LiplinerDetails, Lipstick, LipstickDetails, Mascara, MascaraDetails, NailPolish, NailPolishDetails
+} from "../componenets";
 
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <AppLayout /> ,
+const router = createBrowserRouter(
+    
+    [
+        {
+        homepage: "/cosmetics/",
+        element: <AppLayout />,
         children: [
             {
-                index: true,
-                element: <Navigate to={'home'} />,
+                index: true,  element: <Navigate to={'home'} replace={false} />
             },
             {
                 path: 'home',
@@ -22,10 +25,10 @@ const router = createBrowserRouter([
             },
             {
                 path: 'blush',
-                element: <Blush />
+                element: <BlushsMain />
             },
             {
-                path:'blush/:id',
+                path: 'blush/:id',
                 element: <BlushDetails />
             },
             {
@@ -33,7 +36,7 @@ const router = createBrowserRouter([
                 element: <Bronzer />
             },
             {
-                path:'bronzer/:id',
+                path: 'bronzer/:id',
                 element: <BronzerDetails />
             },
             {
@@ -41,7 +44,7 @@ const router = createBrowserRouter([
                 element: <EyeBrows />
             },
             {
-                path:'eyebrows/:id',
+                path: 'eyebrows/:id',
                 element: <EyeBrowsDetails />
             },
             {
@@ -49,7 +52,7 @@ const router = createBrowserRouter([
                 element: <Eyeliner />
             },
             {
-                path:'eyeliner/:id',
+                path: 'eyeliner/:id', 
                 element: <EyelinerDetails />
             },
             {
@@ -57,7 +60,7 @@ const router = createBrowserRouter([
                 element: <EyeShadow />
             },
             {
-                path:'eyeshadow/:id',
+                path: 'eyeshadow/:id',
                 element: <EyeshadowDetails />
             },
             {
@@ -65,7 +68,7 @@ const router = createBrowserRouter([
                 element: <Foundation />
             },
             {
-                path:'foundation/:id',
+                path: 'foundation/:id',
                 element: <FoundationDetails />
             },
             {
@@ -73,7 +76,7 @@ const router = createBrowserRouter([
                 element: <LipLiner />
             },
             {
-                path:'lipliner/:id',
+                path: 'lipliner/:id',
                 element: <LiplinerDetails />
             },
             {
@@ -81,14 +84,14 @@ const router = createBrowserRouter([
                 element: <Lipstick />
             },
             {
-                path:'lipstick/:id',
+                path: 'lipstick/:id',
                 element: <LipstickDetails />
             },
             {
                 path: 'mascara',
                 element: <Mascara />
-            },{
-                path:'mascara/:id',
+            }, {
+                path: 'mascara/:id',
                 element: <MascaraDetails />
             },
             {
@@ -96,15 +99,17 @@ const router = createBrowserRouter([
                 element: <NailPolish />
             },
             {
-                path:'nailpolish/:id',
+                path: 'nailpolish/:id',
                 element: <NailPolishDetails />
             }
         ],
         path: '*',
         errorElement: <ErrorElement />
+
     }
-]);
+]
+);
+
 
 
 export { router };
-

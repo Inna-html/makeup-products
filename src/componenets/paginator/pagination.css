@@ -1,0 +1,21 @@
+button {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #a1858565;
+  color: #605151;
+  border: 1px solid #a1858594;
+  border-radius: 5px 0px 5px 0px;
+  margin: 5px;
+}
+
+button:focus,
+button:hover {
+  color: #ffffff;
+  background: #a18585;
+  border-color: #ddd;
+  box-shadow: 4px 4px 4px #927c7c;
+}

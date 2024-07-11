@@ -13,7 +13,7 @@ export const Content = styled.div`
 export const Button = styled.div`
    position: fixed; 
    width: 100%;
-   right:-80%;
+   right: -80%;
    bottom: 50px;
    height: 20px;
    font-size: 3rem;
@@ -22,6 +22,6 @@ export const Button = styled.div`
    color: #927c7c;
    
    @media (max-width: 769px) {
-   right:-73%;
+   right: -70%;
    }
 `

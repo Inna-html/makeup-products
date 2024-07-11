@@ -4,7 +4,10 @@ export * from './scrollButton/ScrollButton';
 export * from './errorElement/ErrorElement'
 export * from './footer/Footer';
 export * from './HasError/HasError';
+export * from './paginator/Pagination';
 
+
+export * from './blush/BlushsMain'
 export * from './blush/Blush';
 export * from './blush/BlushDetails';
 

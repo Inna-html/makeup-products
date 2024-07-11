@@ -21,8 +21,8 @@ return (
       <div className={css.headers}>
         
         <div className={css.homeSign}>
-          <Link to={'/home'}>
-            <img alt={'home'} className={css.imgHeader} src={'https://www.pinclipart.com/picdir/big/360-3603986_makeup-brushes-tools-papeis-de-parede-instagram-clipart.png'}/>
+          <Link to='/home'>
+        <img src={require('../../image/icon/icons8-makeup-64.png')} alt={'homePage'} className={css.imgHeader} />
               Home page
           </Link> 
         </div>

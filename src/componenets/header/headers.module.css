@@ -39,7 +39,7 @@ a {
 
 a:hover {
     color: #605151;
-    font-weight: 800;
+    text-shadow: 1px 1px 2px #786565;
 }
 
 .imgHeader {
@@ -91,7 +91,7 @@ a:hover {
     align-items: flex-start;
     text-align: center;
     width: 150px;
-    background: #ffffffb5;
+    background: #ffffffcc;
     padding: 15px;
     position: relative;
 }

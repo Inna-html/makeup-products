@@ -1,4 +1,4 @@
-const baseURL = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+const baseURL = 'https://makeup-api.herokuapp.com/api/v1/products.json';
 
 const urls = {
     blush: '?product_type=blush',

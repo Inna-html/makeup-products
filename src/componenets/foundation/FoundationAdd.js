@@ -5,7 +5,7 @@ import css from './foundation.module.css';
 
 const FoundationAdd = ({foundation}) => {
 
-    const {api_featured_image, brand, name, price, currency, price_sign, 
+    const {api_featured_image, brand, price, currency, price_sign, 
         category, product_type}  = foundation;
 
     return (
@@ -13,8 +13,7 @@ const FoundationAdd = ({foundation}) => {
             <Link to={`/foundation/${foundation.id}`} state={{...foundation}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
-                <h1>{brand}</h1>
-                <p>{name}</p>
+                <h1 className={css.title}>{brand}</h1>
                 <p>{price_sign} {price} {currency}</p>
                 <p>{product_type} {category}</p>
             </div>

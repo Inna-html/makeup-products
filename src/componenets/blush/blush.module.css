@@ -1,8 +1,21 @@
+.pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+/* ############################# */
+
 h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    text-shadow: 10px 10px 10px #927c7c;
+    text-shadow: 4px 4px 4px #927c7c;
     color: #605151;
     font-weight: 800;
     font-size: 34px;
@@ -24,7 +37,7 @@ h1 {
     flex-direction: row;
     padding: 10px;
     font-size: 18px;
-    text-shadow: 10px 10px 10px #927c7c;
+    text-shadow: 4px 4px 4px #927c7c;
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -52,22 +65,30 @@ p {
     align-items: center;
     text-align: center; 
     padding: 10px;
-    margin: 15px;
+    margin: 30px 15px;
     width: 280px;
-    height: 480px;
+    height: 380px;
     background: #fefefecf;
 }
 
 .block img {
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: flex-start;
+    /* align-items: center; */
     padding: 10px;
 }
 
+.title {
+    padding: 10px;
+    margin: 5px;
+    text-shadow: 4px 4px 4px #927c7c;
+}
+
 .block:hover {
-    box-shadow: 5px 5px 50px 5px #927c7c;
+    box-shadow: 5px 5px 50px 5px #927c7c,
+    inset 1px -1px 10px #927c7c;
+    border-radius: 10px;
 }
 
 .blockDetails {

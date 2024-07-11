@@ -5,7 +5,7 @@ import css from './eyeliner.module.css';
 
 const EyeBrowAdd = ({eyeLiner}) => {
 
-    const {api_featured_image, brand, name, price, currency, price_sign, 
+    const {api_featured_image, brand, price, currency, price_sign, 
         category, product_type}  = eyeLiner;
 
     return (
@@ -13,8 +13,7 @@ const EyeBrowAdd = ({eyeLiner}) => {
             <Link to={`/eyeliner/${eyeLiner.id}`} state={{...eyeLiner}}>
             <div className={css.block}>
                 <img src={api_featured_image} alt={brand}/>
-                <h1>{brand}</h1>
-                <p>{name}</p>
+                <h1 className={css.title}>{brand}</h1>
                 <p>{price_sign} {price} {currency}</p>
                 <p>{product_type} {category}</p>
             </div>
