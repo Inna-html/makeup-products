@@ -1,4 +1,43 @@
 
+
+// .right ul li:hover {
+//     font-weight: 800;
+//     background: #9d7e7ed5;
+// }
+// .right ul li {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: nowrap;
+//     text-align: center;
+//     width: 200px;
+//     background: #ffffffcc;
+//     padding: 20px 10px;
+//     z-index: 10;
+// }.right ul li:hover {
+//     font-weight: 800;
+//     background: #9d7e7ed5;
+// }
+// .right ul li {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: nowrap;
+//     text-align: center;
+//     width: 200px;
+//     background: #ffffffcc;
+//     padding: 20px 10px;
+//     z-index: 10;
+// }
+
+
+
+
+
+
+
 {/* children: [
             {
                 index element: <Navigate to={'home'} replace={ false } /> 

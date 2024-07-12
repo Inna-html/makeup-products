@@ -1,13 +1,23 @@
+[class*="__container"] {
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .headers {
-    min-height: 100px;
     height: 100%;
+    width: 100%;
+    background: #a1858583;
+}
+
+.headers__container {
+    position: relative;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align:right;
+    text-align: right;
     flex-direction: row;
-    background: #a1858583;
-    padding: 0  100px 0 100px;
 }
 
 .homeSign {
@@ -15,19 +25,35 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 10px;
+}
+
+.imgHeader {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 }
 
 .right {
+    /* position: relative; */
     display: flex;
     flex-direction: row;
+    height: 100%;
+    gap: 5px;
+}
+
+.right ul {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0px 50px 0px 10px;
 }
 
 .right ul li {
-    display: inline-block;
+    display: inline-flex;
     padding: 10px;
+    list-style-type: none;
 }
 
 a {
@@ -39,83 +65,100 @@ a {
 
 a:hover,
 a:focus {
-    color: #605151;
-    font-weight: 700;
-    text-shadow: 1px 1px 2px #786565;
-}
-
-.imgHeader {
-    width: 25px;
-    height: 25px;
+    color: #433636;
+    text-shadow: 1px 1px 2px #5d4c4c;
 }
 
 .slide_nav_btn {
-    display: flex;
-    opacity: 0.5;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #5d4343;
     position: absolute;
-    cursor: pointer;
     top: 20px;
-    left: 90%;
+    right: 20px;
+    opacity: 0.8;
+    color: #5d4343;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 10px;
+    margin: 0px;
+
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 769px) {
-    .headers {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    padding: 0 5% 0 5%;
-}
+    .headers__container {
+        position: relative;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0px 5px;
+    }
 
-.right {
+    .homeSign {
+        margin-left: 20px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-top: 160px;
+        transform: translateX(5%);
+    }
+
+    .right .active {
+        transform: translateX(0);
+    }
+.right ul li {
     display: flex;
     flex-direction: column;
-    /* justify-content: start; */
-    align-items: center;
-    gap: 15px;
-    width: 10rem;
-    padding-right: 50px;
-    padding-top: 500px;
-    transform: translateX(50%); 
-}
-
-.right .active {
-    transform: translateX(0); 
-}
-
-.right li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    text-align: center;
-    width: 150px;
-    background: #ffffffcc;
-    padding: 15px;
-    position: relative;
-}
-
-a {
-    font-size: 14px;
-}
-
-.slide_nav {
-    display: flex;
-}
-
-.slide_nav_btn {
-    display: flex;
-    opacity: 1;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     text-align: center;
-    color: #5d4343;
-    position: absolute;
-    top: 20px;
-    left: 40%;
+    width: 200px;
+    background: #ffffffcc;
+    padding: 20px 10px;
 }
+.right ul li:hover {
+    font-weight: 800;
+    background: #9d7e7ed5;
 }
+    /* .right li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        text-align: center;
+        width: 180px;
+        background: #ffffffcc;
+        padding: 15px 40px;
 
+        background: #a62c2c81;
+    } */
+
+
+    
+
+
+
+    a {
+        font-size: 14px;
+    }
+
+    .slide_nav_btn {
+        position: absolute;
+        top: 100px;
+        right: 40px;
+
+        display: flex;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #5d4343;
+
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,24 +1,33 @@
+[class*="__container"] { 
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .footer {
     height: 100%;
+    margin: 0 auto;
+    background: #808080a6;
+}
+.footer__container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    margin: 0 auto;
-    background: #808080a6;
     padding: 40px 60px 40px 60px;
 }
-
-.footer span {
+.footer__container span {
     display: flex;
     justify-content: center;
     color: #605151;;
     font-style: italic;
     font-size: 20px;
     font-weight: 700;
+    margin-right: 20px;
 }
 
 p {
+    width: 800px;
     font-size: 24px;
     font-weight: 500;
     font-style: italic;
@@ -27,12 +36,11 @@ p {
 
 
 @media (max-width: 769px) {
-    .footer {
-        /* width: 100%; */
-    /* padding: 20px 40px 20px 40px; */
+.footer__container {
+    width: 100%;
+    padding: 20px 40px 20px 40px;
 }
-
-.footer span {
+.footer__container span {
     font-size: 16px;
     line-height: 18px;
 }

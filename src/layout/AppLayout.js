@@ -25,7 +25,6 @@ const AppLayout = () => {
             <div>
                 <Footer />
             </div>
-                
         </div>
     )
 }
