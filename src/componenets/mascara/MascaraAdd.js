@@ -11,11 +11,14 @@ const MascaraAdd = ({mascara}) => {
     return (
         <div className={css.main}>
             <Link to={`/mascara/${mascara.id}`} state={{...mascara}}>
-            <div className={css.block}>
-                <img src={api_featured_image} alt={brand}/>
+                <div className={css.block}>
+                    <div className={css.addImg}>
+               <img src={api_featured_image} alt={brand}/>         
+          </div>
+                
                 <h1 className={css.title}>{brand}</h1>
-                <p>{price_sign} {price} {currency}</p>
-                <p>{product_type} {category}</p>
+                <p className={css.addParagraph}>{price_sign} {price} {currency}</p>
+                <p className={css.addParagraph}>{product_type} {category}</p>
             </div>
             </Link>
         </div>

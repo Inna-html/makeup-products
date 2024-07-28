@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import css from "./blush.module.css";
 
 const BlushAdd = ({ blush }) => {
-    const { brand, price, price_sign, api_featured_image,
-        currency, category, product_type } = blush;
-
+  const { brand, price, price_sign, api_featured_image,
+    currency, category, product_type } = blush;
+  
   return (
     <div className={css.main}>
       <Link to={`/blush/${blush.id}`} state={{ ...blush }}>

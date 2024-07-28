@@ -1,5 +1,5 @@
 [class*="__container"] {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -30,7 +30,6 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* .contentBlock  */
 .navbar {
     display: flex;
     justify-content: center;
@@ -84,7 +83,7 @@
     text-align: center;
     padding: 10px;
     margin: 30px 15px;
-    width: 280px;
+    width: 240px;
     height: 380px;
     background: #fefefecf;
 }
@@ -112,6 +111,8 @@
     padding: 10px;
     margin: 5px;
     text-shadow: 4px 4px 4px #927c7c;
+
+    font-size: 22px;
 }
 
 .addParagraph {
@@ -147,6 +148,7 @@
     display: flex;
     color: #5d4343;
     font-style: italic;
+    text-align: justify;
     font-size: 22px;
     line-height: 36px;
     margin: 5px;
@@ -193,7 +195,6 @@ span {
         height: 400px;
     }
 
-/*  */
     .blockDetails {
         display: flex;
         text-align: center;
@@ -212,7 +213,7 @@ span {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        text-align: justify;
+        /* text-align: justify; */
         box-sizing: border-box;
         width: 100vw;
         padding: 5px 30px;

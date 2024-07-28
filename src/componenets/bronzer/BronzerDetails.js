@@ -14,20 +14,23 @@ const BronzerDetails = () => {
 return (
     <div>
         <div className={css.blockDetails}>
-            <img src={api_featured_image}  alt={brand}/>
-            <h1>Brand: {brand}</h1>
+            <div className={css.detailsImg}>
+               <img src={api_featured_image}  alt={brand}/> 
+                </div>
+            
+            <h1 className={css.title}>Brand: {brand}</h1>
 
-            <p><span>Name:</span> {name}</p>
-            <p><span>Tag-list:</span> {tag_list}</p>
-            <p><span>Price:</span> {price_sign} {price} {currency}</p>
+            <p className={css.detailsParagraph}><span>Name:</span> {name}</p>
+            <p className={css.detailsParagraph}><span>Tag-list:</span> {tag_list}</p>
+            <p className={css.detailsParagraph}><span>Price:</span> {price_sign} {price} {currency}</p>
 
-            <p><Link to={product_link} target='_blank'>Product Link </Link></p>
-            <p><Link to={website_link} target='_blank'>Website Link </Link></p>
+            <p className={css.detailsParagraph__linksDet}><Link to={product_link} target='_blank'>Product Link </Link></p>
+            <p className={css.detailsParagraph__linksDet}><Link to={website_link} target='_blank'>Website Link </Link></p>
 
-            <p><span>Description:</span> {description}</p>
-            <p><span>Category:</span> {category}</p>
-            <p><span>Product type:</span> {product_type}</p>
-            <p><span>Tag-list:</span> {tag_list}</p>
+            <p className={css.detailsParagraph}><span>Description:</span> {description}</p>
+            <p className={css.detailsParagraph}><span>Category:</span> {category}</p>
+            <p className={css.detailsParagraph}><span>Product type:</span> {product_type}</p>
+            <p className={css.detailsParagraph}><span>Tag-list:</span> {tag_list}</p>
         </div>
     </div>
     )

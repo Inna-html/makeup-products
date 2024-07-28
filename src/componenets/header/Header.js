@@ -11,6 +11,7 @@ class Header extends Component {
       visible: false,
     };
   }
+  
 
   render() {
     const { visible } = this.state;

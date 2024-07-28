@@ -1,17 +1,16 @@
 import { NailPolishAdd } from "./nailPolishAdd";
-import css from './nailpolish.module.css';
+import css from "./nailpolish.module.css";
 
-
-const NailPolish = ({nailPolishs}) => {
-
-
-        return (
-            <div>
-                    <div className={css.blockCenterContent}>
-                        {nailPolishs.map(nailPolish => <NailPolishAdd key={nailPolish.id} nailPolish={nailPolish}/>)}
-                    </div>
-            </div>
-    )
-};
+const NailPolish = ({ nailPolishs }) => {
+    return (
+      
+    <div className={css.blockCenterContent}>
+      {nailPolishs.map((nailPolish) => (
+        <NailPolishAdd key={nailPolish.id} nailPolish={nailPolish} />
+      ))}
+    </div>
         
+  );
+};
+
 export { NailPolish };
