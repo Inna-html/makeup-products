@@ -13,7 +13,7 @@
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
     "sort-by": "^1.2.0",
     "styled-components": "^6.0.7",
@@ -26,9 +26,9 @@
     "eject": "react-scripts eject",
     "dev": "npm run dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://Inna-html.github.io/cosmetics/"
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "/makeup_products",
   "eslintConfig": {
     "extends": [
       "react-app",

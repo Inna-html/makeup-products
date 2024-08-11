@@ -11,7 +11,7 @@ const EyelinerMain = () => {
   const [hasError, setHasError] = useState(false);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [mainPage, setMainPage] = useState(8);
+  const [mainPage] = useState(8);
 
   useEffect(() => {
     try {

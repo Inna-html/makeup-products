@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 import css from './applayout.module.css';
 import ScrollButton from "../componenets/scrollButton/ScrollButton";
@@ -18,6 +18,7 @@ const AppLayout = () => {
                 <ScrollButton />
 
                 <div>
+                    <Navigate to={'/home' ? '/home' : <Outlet />} />
                     <Outlet />
                 </div>
             </div>
@@ -32,7 +33,7 @@ const AppLayout = () => {
 export { AppLayout };
     
 
-// "homepage": "https://Inna-html.github.io/makeup_products"
+// "homepage": "https://Inna-html.github.io//makeup_products"
     
 // https://www.npmjs.com/package/bootstrap
  

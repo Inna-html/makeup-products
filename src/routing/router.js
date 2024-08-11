@@ -15,13 +15,16 @@ import {
     NailPolishMain, NailPolishDetails
 } from "../componenets";
 
-const router = createBrowserRouter([
-{
-    base_url: '/cosmetics/',
+
+const router = createBrowserRouter([{
+    path: '/',
     element: <AppLayout />,
     children: [
       {
-        index: true, element: <Navigate to={"home"} replace={false} />,
+        
+        index: true,
+        element: <Navigate to={"home"}
+        replace={true} />,
       },
       {
         path: "home",
@@ -110,7 +113,10 @@ const router = createBrowserRouter([
     ],
     path: "*",
     errorElement: <ErrorElement />,
-  },
-]);
+  }],
+  {
+    basename: process.env.PUBLIC_URL || '/makeup_products'
+  }
+);
 
 export { router };

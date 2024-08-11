@@ -20,7 +20,7 @@ class Header extends Component {
       <div className={css.headers}>
         <div className={css.headers__container}>
           <div className={css.homeSign}>
-            <Link to="/home">
+            <Link to="home">
               <img
                 src={require("../../image/icon/icons8-makeup-64.png")}
                 alt={"homePage"}
@@ -30,38 +30,40 @@ class Header extends Component {
             </Link>
           </div>
 
+         
+
           <div className={css.right}>
           
             <ul  style={{ display: visible ? "block" : "none" }}>
-              <li>
-                <Link to={"/blush"}>Blush</Link>
+              <li >
+                <Link to={"blush"}>Blush</Link>
+              </li>
+              <li  >
+                <Link to={"bronzer"}>Bronzer </Link>
               </li>
               <li>
-                <Link to={"/bronzer"}>Bronzer </Link>
+                <Link to={"eyebrows"}>Eyebrows</Link>
               </li>
               <li>
-                <Link to={"/eyebrows"}>Eyebrows</Link>
+                <Link to={"eyeshadow"}>Eyeshadow </Link>
               </li>
               <li>
-                <Link to={"/eyeshadow"}>Eyeshadow </Link>
+                <Link to={"eyeliner"}>Eyeliner </Link>
               </li>
               <li>
-                <Link to={"/eyeliner"}>Eyeliner </Link>
+                <Link to={"foundation"}>Foundation</Link>
               </li>
               <li>
-                <Link to={"/foundation"}>Foundation</Link>
+                <Link to={"lipliner"}>Lip liner </Link>
               </li>
               <li>
-                <Link to={"/lipliner"}>Lip liner </Link>
+                <Link to={"lipstick"}>Lipstick </Link>
               </li>
               <li>
-                <Link to={"/lipstick"}>Lipstick </Link>
+                <Link to={"mascara"}>Mascara </Link>
               </li>
               <li>
-                <Link to={"/mascara"}>Mascara </Link>
-              </li>
-              <li>
-                <Link to={"/nailpolish"}>Nail polish </Link>
+                <Link to={"nailpolish"}>Nail polish </Link>
               </li>
             </ul>
             
