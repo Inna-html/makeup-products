@@ -6,7 +6,9 @@ A selection of makeup-products of different brands, you can also view the detail
 
 ### ***How to start***
 
-npm start
+duplicate the repository and 
+- npm install
+- npm start
 
 ### ***License***
 
